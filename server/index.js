@@ -16,9 +16,10 @@ const app = express();
 const port = process.env.Port || 3001;
 app.use(express.json());
 
-app.get('/', function(req,res){
-    res.send('Hello World!');
-});
+
+
+// import routes
+import userRoute from './routes/userRoute.js';
 
 
 
